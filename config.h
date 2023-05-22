@@ -12,6 +12,12 @@ const float output_x_coeff=1;
 const float output_y_coeff=1;
 const float output_z_coeff=1;
 
+const float rot_x_coeff=1;
+const float rot_y_coeff=1;
+const float rot_z_coeff=1;
+const float rot_x_offset=1;
+const float rot_y_offset=1;
+const float rot_z_offset=1;
 //camera settings
 const  int image_width = 1640;
 const  int image_height = 1232;
