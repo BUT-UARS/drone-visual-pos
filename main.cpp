@@ -388,20 +388,20 @@ Mat calcRotationMatrix()
 {
     // x axis
     Mat rotx = (Mat_<float>(3,3) <<
-            1,0,0,
-            0,cos(pitch_deg),-sin(pitch_deg),
-            0,sin(pitch_deg),cos(pitch_deg));
+                                 1,0,0,
+            0,cos(pitch_deg*0.017453292),-sin(pitch_deg*0.017453292),
+            0,sin(pitch_deg*0.017453292),cos(pitch_deg*0.017453292));
 
     // y axis
     Mat roty = (Mat_<float>(3,3) <<
-            cos(roll_deg),0,sin(roll_deg),
+                                 cos(roll_deg*0.017453292),0,sin(roll_deg*0.017453292),
             0,1,0,
-            -sin(roll_deg),0,cos(roll_deg));
+            -sin(roll_deg*0.017453292),0,cos(roll_deg*0.017453292));
 
     // z axis
     Mat rotz = (Mat_<float>(3,3) <<
-            cos(yaw_deg),-sin(yaw_deg),0,
-            sin(yaw_deg),cos(yaw_deg),0,
+                                 cos(yaw_deg*0.017453292),-sin(yaw_deg*0.017453292),0,
+            sin(yaw_deg*0.017453),cos(yaw_deg*0.017453292),0,
             0,0,1);
 
     return rotx*roty*rotz;
