@@ -1,0 +1,3 @@
+# drone-visual-pos
+Bachelor thesis
+DRONE POSITION STABILIZATION METHODS USING IMAGE DATA
